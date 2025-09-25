@@ -1,11 +1,11 @@
 # CF-RAG: Counterfactual-Driven Retrieval-Augmented Generation
 
-## 🚀 Overview
+## Overview
 
 CF-RAG is a new framework that enhances Retrieval-Augmented Generation (RAG) with causal reasoning to overcome a critical vulnerability in existing systems: the Correlation Trap.
 
 
-## 📊 Supported Datasets
+## Supported Datasets
 
 CF-RAG has been evaluated on multiple benchmark datasets:
 
@@ -16,7 +16,7 @@ CF-RAG has been evaluated on multiple benchmark datasets:
 - **PubHealth**: Health claim verification dataset
 
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -56,7 +56,7 @@ mkdir -p knowledge_base
 # Add your .txt, .md, or .json files to the knowledge_base directory
 ```
 
-## 🚀 Usage
+## Usage
 
 ### Dataset Evaluation
 
@@ -69,7 +69,7 @@ python musique_evaluation.py --num-samples 50
 python run_evaluation.py --dataset pubhealth --num-samples 50
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 Key configuration parameters in `config.py`:
 
@@ -114,7 +114,7 @@ USE_SEMANTIC_CLUSTERING = True
 ENABLE_MULTI_ASPECT_CONSISTENCY = False
 ```
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 CF-RAG uses standard QA evaluation metrics:
 
@@ -123,7 +123,7 @@ CF-RAG uses standard QA evaluation metrics:
 - **Processing Time**: Average time per question
 - **Smart Matching**: Enhanced matching for various answer formats
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 CF-RAG/
@@ -144,7 +144,7 @@ CF-RAG/
 └── eval_results/               # Evaluation results
 ```
 
-## 🔧 Hardware Requirements
+## Hardware Requirements
 
 ### Minimum Requirements
 - GPU: 8GB VRAM (RTX 3080, RTX 4070, etc.)
@@ -152,7 +152,7 @@ CF-RAG/
 - Storage: 50GB free space
 
 ### Recommended Requirements (Current Testing Configuration)
-- **GPU: A100 80GB VRAM** ⭐ (Currently Tested)
+- **GPU: A100 80GB VRAM**  (Currently Tested)
   - Supports full precision models
   - Enables parallel draft generation
   - Optimal for complete 5-stage CF-RAG pipeline
@@ -164,7 +164,7 @@ CF-RAG/
 - **Professional**: RTX A6000 (48GB) - good performance with minor adjustments
 - **Data Center**: H100, A100 80GB - excellent performance
 
-## 📈 Performance
+## Performance
 
 CF-RAG demonstrates strong performance across multiple datasets:
 
