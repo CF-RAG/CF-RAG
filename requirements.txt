@@ -1,0 +1,49 @@
+# CF-RAG: Counterfactual-Driven Retrieval-Augmented Generation
+# Main dependencies for the CF-RAG system
+
+# Core ML frameworks
+torch>=2.0.0
+transformers>=4.40.0
+sentence-transformers>=2.7.0
+accelerate>=0.29.0
+
+# Vector databases and search
+faiss-gpu>=1.7.2
+qdrant-client>=1.6.0
+
+# Dataset handling
+datasets>=2.10.0
+huggingface-hub>=0.16.0
+
+# Scientific computing
+numpy>=1.21.0
+scikit-learn>=1.1.0
+scipy>=1.9.0
+
+# Quantization (optional but recommended for GPU memory optimization)
+bitsandbytes>=0.43.0
+
+# Text processing
+sentencepiece>=0.1.99
+tokenizers>=0.13.0
+
+# Logging and utilities
+loguru>=0.6.0
+pydantic>=1.10.0
+tqdm>=4.64.0
+
+# File and data handling
+pathlib>=1.0.1
+json5>=0.9.0
+protobuf>=3.20.0
+
+# Evaluation and metrics
+nltk>=3.7
+rouge-score>=0.1.2
+
+# Optional: Development and debugging
+ipython>=8.0.0
+jupyter>=1.0.0
+
+# Note: For CUDA support, install PyTorch with CUDA:
+# pip install torch --index-url https://download.pytorch.org/whl/cu121
